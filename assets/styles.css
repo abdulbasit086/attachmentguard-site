@@ -490,11 +490,11 @@ html:not(.js) .theme-toggle, html:not(.js) .menu-btn { display: none; }
 .send-steps .addr { font-family: var(--mono); font-size: 12.5px; overflow-wrap: anywhere; }
 
 .toast {
-  position: absolute; left: -46px; top: 212px; z-index: 4;
+  position: absolute; right: -28px; top: -22px; z-index: 4;
   display: flex; align-items: center; gap: 12px; width: 300px; padding: 12px 14px;
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
   box-shadow: var(--shadow-2);
-  opacity: 0; transform: translateY(12px) scale(.96); pointer-events: none;
+  opacity: 0; transform: translateY(-14px) scale(.96); pointer-events: none;
   transition: opacity .3s var(--ease), transform .55s var(--spring);
 }
 .console.show-toast .toast { opacity: 1; transform: none; }
@@ -851,14 +851,14 @@ html:not(.js) .step-visual .stamp-held { opacity: .95; transform: rotate(-11deg)
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
-  .toast { left: -24px; }
+  .toast { right: -14px; }
   .dz-file small { display: none; }
 }
 @media (max-width: 920px) {
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
   .console, .console-caption { margin-left: 0; max-width: 600px; }
   .console-caption { text-align: left; }
-  .toast { left: auto; right: 16px; top: 196px; }
+  .toast { right: 12px; top: -18px; }
   .section-head.split { grid-template-columns: 1fr; }
   .section-head.split .h2 { margin-bottom: 18px; }
   .section-head.split .lede { padding-bottom: 0; }
@@ -900,7 +900,7 @@ html:not(.js) .step-visual .stamp-held { opacity: .95; transform: rotate(-11deg)
   .stamp { right: 14px; top: 64px; font-size: 16px; }
   .mail-stamp { top: auto; right: 14px; bottom: 54px; font-size: 15px; }
   .dz-file small { display: none; }
-  .toast { right: 10px; left: 10px; width: auto; top: 186px; }
+  .toast { right: 8px; left: 8px; width: auto; top: -16px; }
   .sent-list li { grid-template-columns: auto 1fr auto; }
   .sent-list .s-no, .sent-list .s-files { display: none; }
   .held-list li { grid-template-columns: minmax(0, 1fr) auto; }
