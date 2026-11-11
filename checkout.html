@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Attachment Guard</title>
+  <meta name="description" content="Start your 14-day free trial of Attachment Guard.">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f2ec">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    (function () {
+      var root = document.documentElement, saved = null;
+      root.classList.add('js');
+      try { saved = localStorage.getItem('ag-theme'); } catch (e) {}
+      var theme = saved === 'light' || saved === 'dark' ? saved
+        : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      root.setAttribute('data-theme', theme);
+      setTimeout(function () { if (!root.classList.contains('js-ready')) root.classList.remove('js'); }, 3000);
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', theme === 'dark' ? '#0f0e0c' : '#f4f2ec');
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/styles.css?v=6">
+  <script src="assets/app.js?v=4" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11.5M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 20 20"><rect x="4" y="8.5" width="12" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6.8 8.5V6.3a3.2 3.2 0 0 1 6.4 0v2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+      <symbol id="i-logo" viewBox="0 0 32 32"><path class="logo-shield" d="M16 2.5 5 6.5v8.2c0 7.1 4.7 12.6 11 14.8 6.3-2.2 11-7.7 11-14.8V6.5L16 2.5z"/><path class="logo-clip" d="M19.5 11.5v6.5a3.5 3.5 0 0 1-7 0V10a2.3 2.3 0 0 1 4.6 0v7.6a1.1 1.1 0 0 1-2.2 0v-6.1" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Attachment Guard home">
+        <svg aria-hidden="true"><use href="#i-logo"/></svg>
+        <span>Attachment Guard</span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="i-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 1.8v2M10 16.2v2M1.8 10h2M16.2 10h2M4.2 4.2l1.4 1.4M14.4 14.4l1.4 1.4M4.2 15.8l1.4-1.4M14.4 5.6l1.4-1.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.4 12.6A6.9 6.9 0 0 1 7.4 3.6a7 7 0 1 0 9 9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="checkout">
+    <div class="container">
+      <div class="checkout-head">
+        <a class="back-link" href="index.html#pricing"><svg aria-hidden="true"><use href="#i-arrow"/></svg>Back to pricing</a>
+        <h1 class="h2">Start your free trial</h1>
+        <p class="lede">14 days free, then $5 a month. Cancel any time from the Billing page.</p>
+      </div>
+
+      <div class="checkout-grid">
+        <div>
+          <section class="co-card" aria-labelledby="cycle-title">
+            <h2 id="cycle-title"><span class="co-step">1</span>Choose how you pay</h2>
+            <div class="cycle" role="radiogroup" aria-labelledby="cycle-title">
+              <label>
+                <input type="radio" name="cycle" value="monthly" checked>
+                <span class="cycle-body"><b>Monthly</b><span>$5 / month</span></span>
+              </label>
+              <label>
+                <input type="radio" name="cycle" value="yearly">
+                <span class="save-tag">2 months free</span>
+                <span class="cycle-body"><b>Yearly</b><span>$50 / year</span></span>
+              </label>
+            </div>
+          </section>
+
+          <section class="co-card" aria-labelledby="incl-title">
+            <h2 id="incl-title"><span class="co-step">2</span>What you get</h2>
+            <ul class="co-list">
+              <li><i class="tick on" aria-hidden="true"></i><span>Unlimited guarded invoices and customers</span></li>
+              <li><i class="tick on" aria-hidden="true"></i><span>Sends from your own Outlook or Gmail, with a copy in Sent</span></li>
+              <li><i class="tick on" aria-hidden="true"></i><span>Missing-file alerts and daily reminders</span></li>
+              <li><i class="tick on" aria-hidden="true"></i><span>Invoice and files merged into one PDF</span></li>
+              <li><i class="tick on" aria-hidden="true"></i><span>Email support from the founder</span></li>
+            </ul>
+          </section>
+
+          <section class="co-card" aria-labelledby="pay-title">
+            <h2 id="pay-title"><span class="co-step">3</span>Payment</h2>
+            <p class="sub">You’ll add your card on our secure payment page. You won’t be charged until your trial ends.</p>
+            <div class="pay-methods" aria-label="Accepted payment methods"><span>Visa</span><span>Mastercard</span><span>American Express</span><span>Apple Pay</span><span>Google Pay</span></div>
+          </section>
+        </div>
+
+        <aside class="co-card summary" aria-labelledby="summary-title">
+          <h2 id="summary-title" class="visually-hidden">Order summary</h2>
+          <div class="summary-plan">
+            <svg aria-hidden="true"><use href="#i-logo"/></svg>
+            <div><b>Attachment Guard Standard</b><span>1 Xero organisation</span></div>
+          </div>
+          <dl class="summary-rows">
+            <div><dt>Plan</dt><dd data-price>$5.00 / month</dd></div>
+            <div><dt>Free trial</dt><dd>14 days</dd></div>
+            <div class="total"><dt>Due today</dt><dd>$0.00</dd></div>
+          </dl>
+          <p class="summary-note">Then <span data-price>$5.00 / month</span> from <span data-trial-end>the end of your trial</span>. Prices exclude GST/VAT where it applies.</p>
+          <button class="btn btn-primary" type="button" data-pay>Continue to secure payment <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="secure"><svg aria-hidden="true"><use href="#i-lock"/></svg>Encrypted, secure checkout</p>
+          <div class="co-notice" role="status" data-notice hidden>
+            <b>Online payments are switched off for now.</b>
+            Nothing has been charged and no card details were collected. Email <a href="mailto:basit@attachmentguard.com">basit@attachmentguard.com</a> to get set up.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="margin-top:0">
+        <span>© 2026 Attachment Guard</span>
+        <span>Independent product, not affiliated with or endorsed by Xero Limited, Microsoft or Google.</span>
+        <span><a href="index.html" style="color:inherit">Back to the homepage</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var prices = { monthly: '$5.00 / month', yearly: '$50.00 / year' };
+      var priceEls = document.querySelectorAll('[data-price]');
+      document.querySelectorAll('input[name="cycle"]').forEach(function (input) {
+        input.addEventListener('change', function () {
+          priceEls.forEach(function (el) { el.textContent = prices[input.value]; });
+        });
+      });
+
+      var end = new Date();
+      end.setDate(end.getDate() + 14);
+      var endEl = document.querySelector('[data-trial-end]');
+      try {
+        endEl.textContent = end.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+      } catch (e) {}
+
+      // Payments are not connected yet: show a notice instead of redirecting.
+      var payBtn = document.querySelector('[data-pay]');
+      var notice = document.querySelector('[data-notice]');
+      payBtn.addEventListener('click', function () { notice.hidden = false; });
+    })();
+  </script>
+</body>
+</html>
